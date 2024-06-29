@@ -192,9 +192,7 @@ p{
     margin-top: 72px;
     
 }
-.x-icon{
-    border-radius: 5px;
-}
+
 .container4 h3{
     font-size: 25px;
     margin-top: 155px;
@@ -230,9 +228,18 @@ p{
     display: block;
     font-weight: 500;
 }
-
-
-
+.container6{
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--purple600);
+    color: white;
+    padding: 30px;
+    line-height: 1.6;
+}
+.container6 h3{
+    font-size: 22px;
+    cursor: pointer;
+}
 
 
 
@@ -334,6 +341,11 @@ p{
     }
     .ipad-img img{
         width: 35rem;
+    }
+    .container6{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
     }
 }
 @media (max-width: 600px) {
