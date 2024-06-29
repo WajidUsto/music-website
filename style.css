@@ -202,13 +202,14 @@ p{
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
+    line-height: 1.7;
 }
 .gift-section{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 43px 80px 30px 60px;
+    padding: 20px 20px 20px 20px;
 }
 .gift-btn{
     background-color: var(--purple300);
