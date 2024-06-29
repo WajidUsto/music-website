@@ -28,6 +28,9 @@ a{
 }
 header{
     background-color: var(--purple600);
+    position: sticky;
+    top: 0;
+    z-index: 50;
 }
 nav{
     display: flex;
@@ -42,7 +45,6 @@ nav{
     padding-right: 20px; */
     cursor: pointer;
     font-weight: 700;
-    position: sticky;
 }
 nav ul{
     display: flex;
@@ -72,32 +74,95 @@ nav ul li:hover{
     
 }
 h1{
-    font-size: 40px;
-    gap: 5px;
+    font-size: 90px;
+    gap: 15px;
 }
 h3{
-    font-size: 20px;
-    gap: 5px;
+    font-size: 25px;
+    gap: 15px;
 }
 p{
-    padding: 20px 150px 0px 150px;
+    padding: 20px 200px 0px 200px;
+}
+.bar_icon{
+    display: none;
+}
+.trial-btn{
+    font-size: 17px;
+    padding: 10px 7px;
+    background-color: var(--red600);
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+.trial-btn:hover{
+    opacity: 0.5;
+    transition: 0.4s ease-in-out;
+}
+.para2{
+    padding: 0;
+}
+.music-section{
+    padding-top: 50px;
+    text-align: center;
+    background-color: var(--purple500);
+    color: white;
+    padding: 0 20px 0 20px;
+}
+.container2{
+    padding: 0 50px 0 50px;
+    text-align: center;
+}
+.music-section .container2{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.ipad-img img{
+    width: 100%;
+    position: relative;
+    top: 400px;
+    margin-top: -400px;
+}
+.head2{
+    padding-left: 5px;
+    padding-top: 40px;
+    font-size: 40px;
+    cursor: pointer;
 }
 
 @media (max-width: 926px) {
     nav ul{
         display: none;
     }
+    .bar_icon{
+        padding-top: 6px;
+        display: block;
+        color: white;
+    }
     .logo{
         font-size: 22px;
     }
     h1{
+        font-size: 60px;
         gap: 5px;
     }
     h3{
-        font-size: 17px;
+        font-size: 20px;
         padding-top: 10px;
     }
     p{
-        padding: 20px;
+        padding: 20px 100px 0px 100px;
+    }
+}
+@media (max-width: 568px) {
+    p{
+        padding: 20px 50px 0px 50px;
+    }
+    h1{
+        font-size: 50px;
     }
 }
