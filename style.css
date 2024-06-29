@@ -196,6 +196,36 @@ p{
     font-size: 25px;
     margin-top: 155px;
 }
+.container5{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+}
+.gift-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 43px 80px 30px 60px;
+}
+.para3{
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Responsive Started */
 /* Responsive Started */
