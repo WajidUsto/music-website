@@ -97,7 +97,7 @@ p{
     color: white;
 }
 .trial-btn:hover{
-    opacity: 0.5;
+    transform: scale(1.07);
     transition: 0.4s ease-in-out;
 }
 .para2{
@@ -109,6 +109,7 @@ p{
     background-color: var(--purple500);
     color: white;
     padding: 0 20px 0 20px;
+    margin-top: -20px;
 }
 .container2{
     padding: 0 50px 0 50px;
@@ -120,6 +121,15 @@ p{
     gap: 30px;
     justify-content: center;
     align-items: center;
+}
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 5px;
+    background-color: rgb (70, 68, 37 /39%);
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--purple600);
 }
 .ipad-img img{
     width: 100%;
@@ -133,8 +143,25 @@ p{
     font-size: 40px;
     cursor: pointer;
 }
-
+@media (max-width: 1090px) {
+    .ipad-img {
+        width: 44rem;
+        height: 239px;
+    }
+    .ipad-img img{
+        width: 48rem;
+    }
+    
+}
 @media (max-width: 926px) {
+    .ipad-img{
+        width: 37rem;
+        height: 200px;
+
+    }
+    .ipad-img img{
+        width: 40rem;
+    }
     nav ul{
         display: none;
     }
@@ -156,6 +183,14 @@ p{
     }
     p{
         padding: 20px 100px 0px 100px;
+    }
+}
+@media (max-width: 780px) {
+    .ipad-img{
+        width: 44rem;
+    }
+    .ipad-img img{
+        width: 45rem;
     }
 }
 @media (max-width: 568px) {
