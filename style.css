@@ -52,10 +52,6 @@ nav ul{
     padding-top: 10px;
     font-size: 18px;
 }
-/* nav ul li{
-    /* border-bottom: 1px solid white transparent;
-    transition: 0.5s ease-in-out; */
-/* } */
 
 nav ul li:hover{
     /* opacity: 0.5; */
@@ -64,6 +60,7 @@ nav ul li:hover{
 }
 .hero-section{
     background-image: url(./Assets/./hero_image.png);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -71,7 +68,6 @@ nav ul li:hover{
     display: grid;
     place-items: center;
     text-align: center;
-    
 }
 h1{
     font-size: 90px;
@@ -89,7 +85,7 @@ p{
 }
 .trial-btn{
     font-size: 17px;
-    padding: 10px 7px;
+    padding: 14px 14px;
     background-color: var(--red600);
     border: transparent;
     border-radius: 5px;
@@ -124,12 +120,13 @@ p{
 }
 ::-webkit-scrollbar{
     width: 10px;
-    border-radius: 5px;
-    background-color: rgb (70, 68, 37 /39%);
+    
+    background-color:gray
     
 }
 ::-webkit-scrollbar-thumb{
     background-color: var(--purple600);
+    border-radius: 5px;
 }
 .ipad-img img{
     width: 100%;
@@ -143,6 +140,63 @@ p{
     font-size: 40px;
     cursor: pointer;
 }
+.container3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 435px 50px 0 50px;
+}
+.container3 h4{
+    font-size: 17px;
+    font-weight: 100;
+}
+.read-btn{
+    padding: 16px 28px;
+    margin-bottom: 1rem;
+    background-color: #37008e;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.read-btn:hover{
+    transform: scale(1.07);
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+}
+.container3 img{
+    width: 60rem;
+    padding-bottom: 20px;
+}
+.container4{
+    background-image: url(./Assets/./video.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.video-section .container4{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 0 20px 0px 20px;
+}
+.container4 h4{
+    margin-top: 72px;
+    
+}
+.container4 h3{
+    font-size: 25px;
+    margin-top: 155px;
+}
+
 @media (max-width: 1090px) {
     .ipad-img {
         width: 44rem;
@@ -151,9 +205,20 @@ p{
     .ipad-img img{
         width: 48rem;
     }
-    
+    .container4{
+        padding: 0 50px 0 50px;
+    }
+    .container3{
+        padding-top: 22rem;
+    }
+    .container3 img{
+        width: 100%;
+    }
 }
 @media (max-width: 926px) {
+    .container3{
+        padding-top: 19rem;
+    }
     .ipad-img{
         width: 37rem;
         height: 200px;
@@ -186,18 +251,121 @@ p{
     }
 }
 @media (max-width: 780px) {
+    .container3{
+        padding-top: 16rem;
+    }
+    .hero-section {
+        padding: 0 10px 0 10px;
+        height: 80vh;
+        background-position: center;
+        background-size: cover;
+    }
     .ipad-img{
-        width: 44rem;
+        width: 34rem;
+        height: 180px;
     }
     .ipad-img img{
-        width: 45rem;
+        width: 35rem;
     }
 }
-@media (max-width: 568px) {
+@media (max-width: 600px) {
+    .container3{
+        padding-top: 14rem;
+    }
+    .read-btn{
+        font-size: 14px;
+    }
+    .music-section .container2{
+        gap: 25px;
+        font-size: 15px;
+    }
+    .head2{
+        font-size: 20px;
+    }
+    .ipad-img{
+        width: 28rem;
+        height: 162px;
+    }
+    .ipad-img img{
+        width: 30rem;
+        margin-bottom: 50px;
+    }
     p{
         padding: 20px 50px 0px 50px;
     }
     h1{
         font-size: 50px;
+    }
+}
+@media (max-width: 530px) {
+    .container3{
+        padding-top: 12rem;
+    }
+    .read-btn{
+        font-size: 13px;
+    }
+    .music-section .container2{
+        gap: 20px;
+        font-size: 14px;
+    }
+    .head2{
+        font-size: 30px;
+    }
+    .ipad-img{
+        width: 23rem;
+        height: 134px;
+    }
+    .ipad-img img{
+        width: 24rem;
+        margin-bottom: 117px;
+    }
+}
+@media (max-width: 430px) {
+    .container3{
+        padding-top: 10rem;
+    }
+    .music-section .container2{
+        gap: 18px;
+        font-size: 14px;
+    }
+    .trial-btn{
+        font-size: 15px;
+    }
+    .head2{
+        font-size: 29px;
+    }
+    .ipad-img{
+        width: 23rem;
+        height: 134px;
+    }
+    .ipad-img img{
+        width: 24rem;
+        margin-bottom: 117px;
+    }
+}
+@media (max-width: 426px) {
+    .container3{
+        padding-top: 10rem;
+    }
+    .ipad-img{
+        width: 19rem;
+        height: 110px;
+    }
+    .ipad-img img{
+        width: 19rem;
+        margin-bottom: 174px;
+    }
+}
+@media (max-width: 330px) {
+    .container3{
+        padding-top: 9rem;
+    }
+    .ipad-img{
+        width: 19rem;
+        height: 123px;
+    }
+    .ipad-img img{
+        width: 19rem;
+        margin-bottom: 174px;
     }
 }
