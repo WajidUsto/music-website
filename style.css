@@ -14,7 +14,21 @@
 html,body{
     font-weight: 300;
     line-height: 1.4; 
+    scroll-behavior: smooth;
 }
+.hero-section{
+    scroll-margin: 80px;
+}
+.music-section{
+    scroll-margin: 70px;
+}
+.video-section{
+    scroll-margin: 70px;
+}
+.gift-section{
+    scroll-margin: 80px;
+}
+
 .container{
     max-width: 1200px;
     margin: 0 auto;
@@ -219,6 +233,7 @@ p{
     padding: 10px 15px;
     color: white;
     font-size: 16px;
+    border-radius: 6px;
 } 
 .gift-btn:hover{
     transform: scale(1.07);
